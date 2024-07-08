@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv("E:\\Practies dataset\\spotify-2023.csv", encoding="latin1")
+df = pd.read_csv("spotify-2023.csv", encoding="latin1")
 
 
 
