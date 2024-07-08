@@ -37,7 +37,7 @@ model = NearestNeighbors(metric='cosine')
 model.fit(matrix)
 
 try:
-    mv = input("Enter Music name: ").lower()
+    mv = input("Enter Any Music name Then i will recommend you music : ").lower()
     mi = df[df["track_name"] == mv].index[0]
     dis, idx = model.kneighbors(matrix.iloc[mi].values.reshape(1, -1), n_neighbors=10)
 
